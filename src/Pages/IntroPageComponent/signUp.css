@@ -1,0 +1,167 @@
+/* LOGIN PAGE */
+.bg-Image {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 1.8),
+      rgba(0, 0, 0, 1)
+    ),
+    url("../../../public/Images/Intro-4.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.main-grid-cont {
+  display: flex;
+  flex-direction: column;
+}
+
+.cont-2 {
+  height: 50vh;
+  background-color: #ffff;
+  border-top-left-radius: 10rem;
+  border-top-right-radius: 10rem;
+}
+
+.img-Container-login {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+.bottom-Login-pagetext {
+  font-size: 1.6rem;
+}
+.login-Arr-Left {
+  margin-top: 2rem;
+}
+.signUp-Icon {
+  color: #fff;
+  font-size: 2.8rem;
+}
+
+.signUp-text {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  background-color: #ffff;
+  margin-top: 2rem;
+}
+.form-container div {
+  width: 50%;
+  padding: 0 2rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-left: 2rem;
+}
+.form-container div h3 {
+  font-size: 2rem;
+  color: #999;
+}
+.form-heading {
+  margin-bottom: 3.2rem;
+  display: flex;
+  flex-direction: column;
+}
+.form-heading h2 {
+  color: var(--secondary);
+  font-size: 3rem;
+  border-bottom: 2px solid var(--secondary);
+  width: 12rem;
+  padding-bottom: 0.8rem;
+  margin-bottom: 1.2rem;
+  align-self: center;
+}
+.form-heading p {
+  font-size: 1.8rem;
+  color: #313030;
+}
+.form-details {
+  height: 100%;
+}
+.form-container div input {
+  width: 100%;
+  height: 3rem;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1.2rem;
+  border-bottom: 2px solid var(--secondary);
+}
+.form-container button {
+  padding: 1rem;
+  font-size: 1.9rem;
+  border-radius: 20px;
+  border: none;
+  width: 20rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #fff;
+  background-color: var(--secondary);
+  margin-top: 2rem;
+}
+.form-container button:hover {
+  background-color: var(--secondary);
+}
+
+.Input-Cont {
+  width: 100%;
+}
+
+.termsSignUp {
+  font-size: 2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+#terms {
+  display: flex;
+}
+
+/*  media querries Login Page */
+@media (max-width: 822px) {
+  .login-Arr-Left {
+    margin-left: 5rem;
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 523px) {
+  .form-heading p {
+    font-size: 2.2rem;
+    color: #999;
+  }
+  .form-container div {
+    width: 100%;
+  }
+  .bottom-Login-pagetext p {
+    font-size: 2.1rem;
+    margin-top: 0.9rem;
+  }
+}

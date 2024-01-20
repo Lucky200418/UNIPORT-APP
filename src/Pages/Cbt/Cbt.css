@@ -1,0 +1,15 @@
+.CbtContainer {
+  height: 100vh;
+  background-image: url("../../../public/Images/coming-soon-banner-4075742-3373565.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 3rem;
+}
+.CbtContainer h1 {
+  font-weight: 600rem;
+  position: absolute;
+  top: 70%;
+  left: 20%;
+  transform: translate(-50% -50%);
+}

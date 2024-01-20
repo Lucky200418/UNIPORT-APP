@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown Timer</title>
+</head>
+<body>
+  <div id="countdown"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    function countdown(element, minutes) {
+      // Get the current time.
+      const now = new Date();
+
+      // Calculate the end time.
+      const endTime = new Date(now.getTime() + minutes * 60 * 1000);
+
+      // Set the initial values.
+      let minutesRemaining = minutes;
+      let secondsRemaining = 0;
+
+      // Create a timer loop.
+      let timer = setInterval(() => {
+        // Get the current time.
+        const now = new Date();
+
+        // Calculate the remaining time.
+        const remainingTime = endTime - now;
+
+        // Update the minutes and seconds remaining.
+        minutesRemaining = Math.floor(remainingTime / (60 * 1000));
+        secondsRemaining = Math.floor(remainingTime / 1000) % 60;
+
+        // Update the countdown timer.
+        document.getElementById(element).innerHTML = `
+          Minutes: ${minutesRemaining}
+          <br>
+          Seconds: ${secondsRemaining}
+        `;
+
+        // If the timer is finished, stop it.
+        if (minutesRemaining === 0 && secondsRemaining === 0) {
+          clearInterval(timer);
+          console.log('bababab')
+        }
+      }, 1000);
+    }
+
+    $(document).ready(() => {
+      countdown('countdown', 2);
+    });
+  </script>
+</body>
+</html>

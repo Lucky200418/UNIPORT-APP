@@ -1,0 +1,22 @@
+{
+  "name": "UNIPORT-Elearning App",
+  "short_name": "UNIPORT-Academy Solutions",
+  "description": "A pwa app for academic solutions",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "orientation": "portrait",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/Icon192.jpg",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/Icon512.jpg",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

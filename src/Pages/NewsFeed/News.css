@@ -1,0 +1,125 @@
+.newswrapper {
+  background-color: #fff !important;
+  padding-bottom: 4rem;
+}
+
+.newsComponentContainer {
+  background-color: #fff !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: auto;
+  font-size: 2.5rem;
+  padding: 3rem;
+}
+.BarIcon {
+  font-size: 4rem;
+}
+
+.notification-heading {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.bellBackground {
+  padding: 1.5rem;
+  background-color: var(--darkSecondary);
+  border-radius: 50%;
+  position: relative;
+}
+.bellIcon {
+  color: #fff;
+}
+
+.notificationCount {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  color: #fff;
+  padding: 0.9rem;
+  font-size: 1.9rem;
+  border-radius: 20px;
+  height: 3.5rem;
+  background-color: var(--secondary);
+}
+
+.NotificationBox {
+  height: auto;
+  width: 100%;
+  margin: 0rem !important;
+}
+.NewsContainer {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  column-gap: 0.6rem;
+  padding: 1rem;
+  width: 100%;
+  border-top: 1px solid var(--secondary);
+  border-bottom: 1px solid var(--secondary);
+}
+.postAccImage {
+  padding: 1rem;
+}
+.postAccImage img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+}
+
+.postContainerContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.postDescription {
+  width: 100%;
+}
+.postDescription p {
+  line-height: 3rem;
+  font-size: 2rem;
+}
+.postTitleTopText {
+  padding-top: 0.9rem;
+  font-size: 1.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.postTitleTopText p {
+  font-size: 2.7rem;
+  color: #999;
+}
+.notifDate {
+  color: #999;
+}
+.postImageContainer {
+  width: 100%;
+}
+.postImageContainer img {
+  border-radius: 10px;
+  width: 100% !important;
+}
+/* Offline Page */
+.OfflineContainer {
+  height: 100vh;
+  background-color: #fff;
+}
+.OfflineContainer p {
+  text-align: center;
+  font-weight: 600;
+  color: black;
+  font-size: 3rem;
+}
+.OfflineImage {
+  width: 100%;
+  height: 60vh;
+}
+
+@media (min-width: 720px) {
+  .postDescription p {
+    font-size: 1rem;
+  }
+}

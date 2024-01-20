@@ -1,0 +1,433 @@
+.calculatorMainContainer {
+  background-image: url("../../../public/Images/backgroundComponent.jpeg");
+  background-size: cover;
+  height: 100vh;
+}
+
+.gpa-header {
+  padding: 1rem;
+  color: #fff;
+  background-color: var(--secondary);
+}
+.gpaArrIcon {
+  font-size: 2.1rem;
+  margin-left: 2rem;
+}
+
+.gpa-header h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+.add-form {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  padding-top: 4rem;
+  backdrop-filter: blur(10px);
+}
+.add-form h3 {
+  text-align: center;
+  color: var(--secondary);
+  margin-bottom: 2rem;
+  font-size: 2.3rem;
+}
+.form-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  background-color: var(--secondary);
+  border-radius: 6px;
+  padding: 0.9rem;
+  width: 98%;
+  margin: 0 auto;
+}
+.form-details input {
+  padding: 1.5rem;
+  border: none;
+  border-radius: 6px;
+}
+
+.unit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+.unit select {
+  padding: 0.5rem;
+  color: var(--secondary);
+  border: none;
+}
+.unit select:focus {
+  outline-style: var(--secondary);
+}
+.add {
+  padding: 0.6rem;
+  border: none;
+  color: var(--secondary);
+  font-weight: 600;
+}
+.add:hover {
+  background-color: var(--darkSecondary);
+}
+.courseDisplay {
+  width: 98%;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--secondary);
+  margin-top: 4rem;
+  color: #fff;
+  font-size: 2.3rem;
+}
+.CourseTable {
+  display: flex;
+  gap: 6rem;
+}
+.CourseTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.7rem;
+}
+.bodyButton {
+  width: 98%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.bodyButton button {
+  padding: 0.6rem;
+  color: #fff;
+  background-color: var(--secondary);
+  border: none;
+  margin-right: 1.2rem;
+  gap: 1.6rem;
+  width: 20rem;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: -1;
+}
+@media (max-width: 452px) {
+  .form-details {
+    padding: 0.5rem;
+  }
+  .form-details input {
+    width: 16rem;
+    height: 4rem;
+  }
+  .unit select {
+    gap: 0.3rem;
+  }
+
+  .courseDisplay {
+    font-size: 1.6rem;
+    padding: 1.4rem;
+  }
+
+  .CourseTable {
+    gap: 5rem;
+  }
+}
+@media (max-width: 368px) {
+  .form-details input {
+    width: 14rem;
+    height: 3rem;
+  }
+  .unit select {
+    width: 5rem;
+    height: 3rem;
+    padding: 0.2rem;
+    transform: scale(0.8);
+  }
+  .add {
+    font-size: 1.2rem;
+    padding: 0.4rem;
+  }
+  .bodyButton button {
+    padding: 0.4rem;
+    gap: 1.6rem;
+    width: 14rem;
+  }
+}
+/******** New Calculator Update *******/
+.containerHeading{
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  font-size: 2rem;
+  color: #fff !important;
+  background-color: var(--secondary);
+}
+.GpaResult{
+margin: auto 40%;
+margin-top: 2rem;
+width: 20%;
+/* color: var(--darkSecondary) !important; */
+text-align: center;
+}
+.GpaResult h2 {
+  font-size: 4rem;
+}
+.GpaResult p {
+  font-size: 1.5rem;
+}
+
+.addLevelBtn{
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  background-color: var(--secondary);
+  color: #fff;
+  padding: 1.6rem 2.4rem;
+  margin-left: 1.5rem;
+}
+.btnCourse{
+  margin-bottom: 8rem;
+
+}
+.SavedGpaContainerResults{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 8rem;
+}
+.GpResultsContainer{
+border: 1px solid var(--secondary);
+border-radius: 6px;
+padding: 1.2rem;
+}
+.GpResultsContainer h3{
+  font-size: 1.8rem;
+  color: var(--secondary);
+}
+.ResultsDisplay{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ResultsDisplay div{
+display: flex;
+flex-direction: column;
+gap: 1rem;
+font-size: 1.5rem;
+font-weight: 600;
+}
+.GpResultsContainer button{
+  margin-top: 0.9rem;
+  margin-left: 0.1rem !important;
+}
+
+.GpResultsContainer span{
+font-size: 3rem;
+}
+.totalGpa{
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.LevelFormGp{
+  gap: 1rem;
+  font-size: 1.6rem;
+  margin-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.LevelFormGp input:focus{
+  outline-style: var(--secondary);
+}
+
+.LevelFormGp input{
+  border: 1px solid var(--secondary);
+  width: 80%;
+  padding: 1.2rem;
+  font-size: 2rem;
+  border-radius: 6px;
+}
+.LevelFormGp button{
+  padding: 0.9rem;
+  font-size: 1.8rem;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+}
+
+.LevelFormGp button:nth-child(1){
+  background-color: var(--secondary);
+}
+
+.LevelFormGp button:nth-child(2){
+  background-color: rgb(255, 11, 11);
+}
+/********** New Calculator Update  ******************/
+/* ************RESULTS PAGE************************ */
+.resultPageDiv--1{
+  background-color: var(--secondary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+  padding: 2.5rem;
+  position: relative;
+}
+.savegpa{
+  font-size: 4rem;
+}
+.resultPageDiv--1 span{
+  font-size: 3rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.resultPageDiv--2{
+  background-color: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 600;
+  width: 100%;
+}
+.resultPageDiv--2 p{
+  padding: 0.9rem;
+
+}
+.activeSemester{
+  border-bottom: 4px solid var(--darkSecondary);
+}
+.resultPageDiv--3{
+  width: 20rem;
+  margin: 2.3rem auto;
+  text-align: center;
+}
+
+.resultPageDiv--3 p:nth-child(1){
+  font-size: 3.8rem;
+  font-weight: 600;
+}
+
+.resultPageDiv--3 p:nth-child(2){
+  font-size: 1.5rem;
+}
+
+.resultPageDiv--4{
+width: 100%;
+font-size: 2rem;
+}
+.resultTable{
+  width: 100%;
+  padding: 0.8rem;
+}
+.resultTable th{
+  width: 25%;
+  margin-bottom: 1.4rem;
+}
+.resultTable td{
+  text-align: center;
+  background-color: rgb(112, 107, 107);
+  color: #fff;
+  padding: 0.9rem;
+  border-radius: 4px;
+}
+.input-td{
+  padding: 0rem !important;
+  width: 25% !important;
+  font-size: 2.1rem;
+  background-color: #fff !important;
+  border: 2px solid rgb(112, 107, 107);
+}
+.input-td input{
+  width: 80%;
+  border: none;
+}
+.input-td input:focus{
+  outline-style: none;
+}
+.resultSelect{
+ width: 100%;
+ text-align: center;
+ background-color: rgb(112, 107, 107);
+ border: none;
+ color: #fff;
+}
+.resultDisplayContainer{
+  font-size: 2rem;
+  padding: 1rem;
+  display: flex;
+  gap: 4.9rem;
+  text-align: center;
+}
+.resultDisplayContainerCourse{
+  display: flex;
+  gap: 0.3rem;
+align-items: center;
+}
+.resultDisplayContainerCourse div{
+  width: 13rem;
+  padding: 0.9rem;
+  background-color: var(--secondary);
+  border-radius: 6px;
+}
+.resultClose{
+  padding: 0.3rem;
+  border-radius: 50%;
+  background-color: var(--secondary);
+  color: #fff;
+  cursor: pointer;
+  align-self: center;
+}
+.closePrompt{ 
+  position: absolute;
+border-radius: 6px;
+  background-color: rgb(3, 119, 38);
+  padding: 1.2rem;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin: 0 auto;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+}
+.closePrompt h3{
+  font-size: 2rem;
+  font-weight: 600;
+}
+.closePrompt p{
+  font-size: 1.9rem;
+}
+.closePrompt  button{
+  padding: 0.6rem;
+  color: #fff;
+  border: none;
+  background-color: var(--secondary);
+}
+.closePrompt  button:nth-child(1){
+  margin-right: 1.6rem;
+}
+/* ************RESULTS PAGE************************ */
+@media (max-width: 318px) {
+  .courseDisplay {
+    font-size: 1.5rem;
+    padding: 1.3rem;
+  }
+
+  .CourseTable {
+    gap: 4rem;
+  }
+}

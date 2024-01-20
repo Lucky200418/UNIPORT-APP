@@ -1,0 +1,113 @@
+body {
+    background-image: url(/theory/image/background.jpeg);
+    font-family: 'Poppins', sans-serif;
+}
+
+
+::selection{
+    color: #fff;
+    background: var(--secondary);
+}
+
+
+.container {
+    /* margin: 0 auto;
+    max-width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #fff;
+    transform: translate(0, 50%); */
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.course {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .selected {
+    background-color: lightblue;
+  }
+
+#courseButtonContainer {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+#selectCourseButton {
+    border: none;
+    background: var(--secondary);
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 2px;
+    color: white;
+}
+
+#topicContainer {
+    display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center;
+      margin-bottom: .3em;
+      
+}
+
+#topicContainer div {
+    /* display: block; */
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    height: 40%;
+    border: 1px var(--secondary) solid;
+    /* text-align: center; */
+    color: black;
+
+
+}
+
+#topicContainer div :nth-last-child() {
+    margin-bottom: .5em;
+}
+
+#yearContainer {
+    display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center;
+      margin-bottom: .3em;
+}
+
+#yearContainer div {
+    /* display: block; */
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    height: 40%;
+    border: 1px solid #ccc;
+    /* text-align: center; */
+    color: black;
+
+
+}
+
+#yearContainer div :nth-last-child() {
+    margin-bottom: .5em;
+}

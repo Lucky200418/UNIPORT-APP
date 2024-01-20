@@ -1,0 +1,693 @@
+.NotesWrapper {
+  background-image: linear-gradient(
+      to bottom,
+      #9794941a,
+      rgba(15, 15, 15, 0.3),
+      rgba(43, 41, 41, 0.4),
+      rgba(194, 192, 192, 0.5),
+      rgba(156, 153, 153, 0.6),
+      #f8f4f4cc,
+      rgb(226, 222, 222)
+    ),
+    url("../../../public/Images/Intro-3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.NotesContainer {
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+.NotesTopBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+.MidBar {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.MidBar > button {
+  width: 7rem;
+  height: 2.9rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  background-color: var(--secondary);
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+}
+
+.MidBar > h2 > span {
+  letter-spacing: 0.2rem;
+}
+.MidBar > h2 {
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+}
+
+.MidBar > p {
+  color: #fff;
+}
+
+.thirdBar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6rem;
+}
+
+.note-btn {
+  width: 19rem;
+  height: 3.8rem;
+  font-size: 2.7rem;
+  font-weight: 600;
+  background-color: #ffffff;
+  color: black;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+}
+
+.star-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.star-Note {
+  color: rgb(236, 203, 12);
+}
+
+.NotesSection {
+  margin: 0 auto;
+  width: 60%;
+  height: auto;
+  background-color: #fff;
+  border-radius: 9px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.NotesSection p {
+  line-height: 2.9rem;
+  margin-bottom: 2rem;
+}
+
+.courselayoutTop {
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+.courseLayout {
+  height: 50rem;
+  overflow-y: scroll;
+}
+.searchNoteContainer {
+  display: flex;
+}
+.searchNoteContainer input {
+  width: 80%;
+  outline: none;
+  padding: 1rem;
+  border-radius: 7px;
+  font-size: 2.4rem;
+  border: none;
+  margin-bottom: 2rem;
+}
+
+.searchNoteIcon {
+  background-color: var(--secondary);
+  color: #fff;
+  padding: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.courselayoutheading {
+  font-size: 3rem;
+  text-align: center;
+  padding: 0.9rem;
+}
+.Notes {
+  box-shadow: 0 4px 8px 0 rgba(109, 105, 105, 0.2),
+    0 6px 20px 0 rgba(83, 81, 81, 0.19);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  background-color: #fff;
+}
+.Notes h3 {
+  font-size: 2rem;
+}
+.Notes-Heading {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  border-radius: 7px;
+}
+
+.Topics h4 {
+  margin-bottom: 2rem;
+}
+.topic-lock-Icon {
+  color: var(--secondary);
+  margin-right: -2rem;
+}
+.topic-name {
+  overflow: scroll;
+  height: 25rem;
+  scroll-behavior: smooth;
+}
+
+.topic-name li {
+  padding: 0.7rem;
+  list-style: none;
+  box-shadow: 0 2px 4px 0 rgba(143, 140, 140, 0.2),
+    0 6px 20px 0 rgba(163, 161, 161, 0.19);
+  border-top: 2px solid #66e201;
+}
+.topic-name li:hover {
+  background-color: #66636322;
+}
+.open > h3 {
+  color: #66e201;
+}
+
+/* NOTE BODY CSS */
+.NoteBody {
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 16rem;
+  background-color: #ffffff;
+}
+
+.NoteBody-topBar {
+  color: #66e201;
+  padding: 1rem 2rem;
+}
+
+.notebodyLeft {
+  font-size: 3rem;
+}
+.NoteBody-Bottom {
+  position: fixed;
+  background-color: var(--secondary);
+  bottom: 0;
+  right: 0;
+  font-size: 2rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.NoteBody-Bottom p {
+  border-bottom: 1px solid #ffffff;
+  padding: 1rem;
+  padding-left: 18rem;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: start;
+}
+
+.noteList {
+  border-bottom: 1px solid #fff;
+  height: 33rem !important;
+  /* height: 0;
+  width: 0; */
+  overflow: scroll !important;
+  scroll-behavior: smooth !important;
+  display: none;
+}
+
+.noteList li {
+  padding: 1.3rem;
+  padding-left: 6rem;
+  font-size: 2rem;
+  text-align: start;
+}
+
+.noteList li:hover {
+  background-color: #2a5a03;
+}
+
+.moreTopics {
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+
+.moreTopics .notebodySliderTop {
+  min-height: auto;
+}
+
+.moreTopics .noteList {
+  height: auto;
+  width: 100%;
+  transition: all 9s;
+  display: block;
+}
+
+/* .NoteBody-Container {
+  padding: 0 1.4rem;
+  font-size: 2rem !important;
+}
+.NoteBody-Container h2 {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 1.1rem;
+} */
+
+.BodyQuill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+.notebodypen {
+  margin-left: 3rem;
+}
+.notebodySliderTop {
+  width: 100%;
+  text-align: center;
+  padding: 0.3rem;
+  background-color: var(--secondary) !important;
+}
+
+.notebodyIcon {
+  padding: 2rem;
+  border-top: 1px solid #9999;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* NOTE TAKER CONTAINER CSS */
+.NoteTaker {
+  width: 50rem;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(109, 105, 105, 0.2),
+    0 6px 20px 0 rgba(83, 81, 81, 0.19);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 2rem;
+  margin: 9rem auto;
+  background-color: #fff;
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.NoteTaker h3 {
+  text-align: center;
+}
+
+.heading input {
+  width: 100%;
+  height: 2.8rem;
+  border: none;
+  background-color: #e7ebe4;
+  font-size: 1.8rem;
+  padding-left: 0.9rem;
+}
+input:focus {
+  outline-color: var(--secondary);
+}
+.description textarea {
+  width: 100%;
+  height: 8rem;
+  border: none;
+  background-color: #e7ebe4;
+  font-size: 1.8rem;
+  padding: 0.9rem;
+}
+.description textarea:focus {
+  border-color: var(--secondary);
+}
+.NoteTaker button {
+  background-color: var(--secondary);
+  color: #fff;
+  width: 8rem;
+  padding: 0.6rem;
+  border: none;
+  font-size: 1.7rem;
+  border-radius: 2px;
+  box-shadow: 0 4px 8px 0 rgba(109, 105, 105, 0.2),
+    0 6px 20px 0 rgba(83, 81, 81, 0.19);
+}
+
+.NoteTaker button:hover {
+  background-color: #40810b;
+}
+
+/* NOTE COMPONENT CONTAINER */
+
+.Notes-Component {
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  width: 80%;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+
+.notesTop {
+  background-color: var(--secondary);
+  background: linear-gradient(
+    to bottom,
+    rgb(91, 201, 2),
+    rgba(110, 241, 2, 0.8) transparent
+  );
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 35rem;
+  padding: 2rem;
+  padding: 10rem 4rem 10rem 4rem;
+  z-index: 1;
+}
+.noteContainer {
+  margin-top: 35rem;
+  padding: 2.5rem;
+  overflow-y: scroll;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.Notes-Component h3 {
+  margin-bottom: 2rem;
+  font-size: 4rem;
+}
+.addNoteBtn {
+  position: absolute;
+  position: fixed;
+  bottom: 12rem;
+  left: 1px;
+  font-size: 3.3rem;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary);
+}
+.notesPopUp {
+  padding: 0rem !important;
+}
+
+.closePopup {
+  font-size: 4rem;
+  position: absolute;
+  top: 0;
+  right: 3rem;
+}
+
+.notesPopUptitle {
+  width: 100%;
+  height: 9rem;
+  padding: 2rem;
+  font-size: 3rem;
+  border: none;
+  border-bottom: 1.6px solid #85838399;
+  background-color: #ffffff;
+}
+.notesPopUptitle:hover {
+  outline-style: none;
+}
+.notesPopUptitle:focus {
+  outline-style: none;
+}
+.Empty-title {
+  font-size: 1.8rem;
+  color: red;
+}
+.icon-placeholder {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  font-size: 1.6rem;
+  transform: translateY(-50%);
+  color: #999;
+}
+.Note-component-input-cont {
+  display: flex;
+}
+.Note-component-input-cont input:focus {
+  outline-style: none;
+}
+.Note-component-input-cont input {
+  width: 100%;
+  height: 7.3rem;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  border: 0.6px solid #999;
+  position: relative;
+  padding: 1.2rem;
+  padding-left: 3rem;
+  font-size: 3rem;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.Note-component-input-cont span {
+  background-color: #fff;
+  /* background-color: var(--darkSecondary); */
+  color: var(--secondary);
+  padding: 2.2rem;
+  font-size: 2.3rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.Note-component-container {
+  display: flex;
+  justify-content: space-between;
+  backdrop-filter: blur(3px);
+  background-color: #f5f5f5e1;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(180, 176, 176, 0.2),
+    0 6px 20px 0 rgba(145, 142, 142, 0.19);
+}
+.note-component-Icon {
+  align-self: flex-end;
+}
+
+.Note-component-container:hover {
+  background-color: #e9e6e688;
+}
+/* NoteLayout */
+.notecont {
+  width: 100%;
+  padding: 1.9rem;
+  background-color: #fff;
+}
+.noteLayoutTop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 9rem;
+  padding: 2rem;
+  z-index: 1;
+  border-bottom: 1px solid #85838399;
+}
+.saveNoteBtnContainer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 9rem;
+  padding: 2rem;
+  z-index: 1;
+}
+
+.editor-Input {
+  margin-top: 9rem;
+  padding-bottom: 20rem;
+}
+.addpopupnote {
+  margin-top: 0rem !important;
+}
+.noteLayout {
+  height: 100vh !important;
+}
+.noteLayoutTopaside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.3rem;
+}
+
+.noteLayoutBottomBtn {
+  display: flex !important;
+  gap: 2rem;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  padding: 1.9rem;
+}
+
+.shareBottomCont {
+  position: absolute;
+  position: fixed;
+  bottom: 0;
+  left: 1px;
+  font-size: 1.9rem;
+  width: 100%;
+  height: 10rem;
+  background: #e6dfdf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  overflow-y: hidden;
+}
+
+.hideShare {
+  display: none !important;
+}
+/* NoteLayout */
+/* AddNoteCss */
+/* ADDNOTEPOPUP ******* */
+.notesPopUp {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  height: 50vh;
+  margin: 0 auto;
+  bottom: 0;
+  position: absolute;
+  position: fixed;
+  left: 0.2rem;
+  font-size: 3.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.notesPopUp span {
+  align-self: flex-end;
+  cursor: pointer;
+}
+.scrollDown {
+  display: none;
+}
+
+.saveNotebtn {
+  padding: 1.2rem;
+  background-color: var(--secondary);
+  color: #fff;
+  border: none;
+  z-index: 10;
+}
+.saveNotebtn:hover {
+  background-color: var(--darkSecondary);
+}
+/* ADDNOTEPOPUP ******* */
+
+/*  queries lecture Notes */
+@media (max-width: 990px) {
+  .NotesSection {
+    width: 80%;
+  }
+
+  .NotesWrapper {
+    height: 100vh;
+  }
+}
+@media (max-width: 773px) {
+  /* Note Body */
+  .Notes-Container {
+    padding: 2rem;
+    font-size: 2.9rem;
+    line-height: 3.5rem;
+  }
+  .Notes-Component {
+    width: 100%;
+  }
+}
+
+@media (max-width: 710px) {
+  .NotesSection {
+    width: 90%;
+  }
+}
+@media (max-width: 538px) {
+  .NotesSection {
+    width: 100%;
+  }
+  .Notes-Container {
+    font-size: 3.4rem;
+    line-height: 3.9rem;
+  }
+}
+
+@media (max-width: 464px) {
+  .NotesSection {
+    width: 100%;
+  }
+  .Notes-Container {
+    font-size: 3.9rem;
+    line-height: 4.8rem;
+  }
+  .notesTop {
+    height: 19rem;
+    padding: 0.5rem;
+    padding: 2rem 1rem 2rem 1rem;
+  }
+  .Note-component-input-cont {
+    transform: scale(0.8);
+  }
+
+  .Notes-Component-header {
+    margin-left: 9rem;
+    color: #fff;
+  }
+
+  .noteContainer {
+    margin-top: 19rem;
+  }
+}
+
+@media (max-width: 368px) {
+  .NotesSection {
+    width: 100%;
+  }
+}
+@media (max-width: 324px) {
+  .NotesSection {
+    width: 100%;
+  }
+}
+@media (max-width: 310px) {
+  .NotesSection {
+    width: 100%;
+  }
+}

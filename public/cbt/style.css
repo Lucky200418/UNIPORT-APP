@@ -1,0 +1,93 @@
+body {
+    background-image: url(/obj/image/background.jpeg);
+    font-family: 'Poppins', sans-serif;
+}
+
+
+::selection{
+    color: #fff;
+    background: var(--secondary);
+}
+
+
+.container {
+    /* margin: 0 auto;
+    max-width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #fff;
+    transform: translate(0, 50%); */
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.course-drop-down {
+    padding: 2em;
+    align-items: center;
+}
+
+#courseSelect {
+ width: 100%;
+ height: 3em;
+ border-radius: .5em;
+ margin-bottom: 1em;
+ color: var(--secondary);
+ border-color: var(--secondary);
+}
+
+#courseSelect:focus {
+    border-color: var(--secondary);
+}
+
+/* Change border color of options when selected */
+#courseSelect option:checked {
+    border-color: var(--secondary);
+}
+
+.courseSelect option {
+    max-width: 200px; /* Adjust as needed */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; /* Adds an ellipsis for overflow */
+}
+
+
+#topicsSelect {
+    width: 100%;
+    height: 3em;
+    border-radius: .5em;
+    margin-bottom: 1em;
+    color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+#topicsSelect:focus {
+    border-color: var(--secondary);
+}
+
+
+#years {
+    /* display: none; */
+    width: 100%;
+    height: 3em;
+    border-radius: .5em;
+    margin-bottom: 1em;
+    color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+#years:focus {
+    border-color: var(--secondary);
+}
+
+option {
+    width: 50%;
+}

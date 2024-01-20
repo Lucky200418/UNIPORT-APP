@@ -1,0 +1,339 @@
+.containerLayout {
+  width: 95%;
+  margin: 0 auto;
+  padding: 0.9rem;
+}
+
+.MainLayout {
+  font-size: 1.6rem;
+  transition: all 0.5s;
+  position: relative;
+  background-image: url(../../../public/Images/test-1.jpeg);
+}
+/* PROFILE CONTAINER */
+.profileContainer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  transform: translateX(-3.2rem);
+}
+.profile-Image {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.Welcome-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+/* PROFILE CONTAINER */
+
+.wrapper {
+  /* border-bottom-right-radius: 20%; */
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 1)
+    ),
+    url("../../../public/Images/test-2.jpeg");
+}
+
+.Top-Section {
+  padding: 2rem 0 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.6rem;
+  color: #fff;
+}
+
+.TopBar {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.Welcome-text {
+  font-size: 2rem;
+  font-weight: 600;
+  display: flex;
+  gap: 1rem;
+}
+.Welcome-text p {
+  font-size: 2rem !important;
+}
+
+.intro-W {
+  color: var(--secondary);
+}
+.intro-text {
+  margin-bottom: 2.3rem;
+  line-height: 2.7rem;
+  font-size: 2rem;
+}
+.mid-text {
+  color: var(--tertiary);
+}
+.quotesContainer p {
+  font-size: 2rem;
+}
+
+.explore {
+  font-weight: 600;
+}
+
+.layoutWrapper {
+  display: flex;
+  flex-direction: column;
+  background: url("../../../public/Images/test-1.jpeg");
+  height: auto;
+  padding-bottom: 4rem;
+}
+
+.layoutComponentContainer {
+  margin: 0 auto;
+  width: 90%;
+  transform: translateY(-1rem);
+}
+
+.layoutComponentContainer:last-child {
+  margin-bottom: 4rem;
+}
+.layoutComponent {
+  border: 1px solid;
+  height: 12.3rem;
+  border-radius: 9px;
+  border-top-left-radius: 2px;
+  box-shadow: 0 4px 8px 0 rgba(143, 139, 139, 0.2),
+    0 6px 20px 0 rgba(151, 148, 148, 0.19);
+  border: none;
+  padding: 2rem;
+  background-color: #ffffffaa;
+}
+
+/* .layoutComponent:hover {
+  transform: scale(0.9);
+} */
+
+.detail {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-bottom: 0.9rem;
+  font-size: 2.3rem;
+}
+
+.layout-text h4 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 1.4rem;
+  display: flex;
+  gap: 3rem;
+}
+/* #b6aa05 */
+.layout-text span {
+  background-color: var(--secondary);
+  border-radius: 40%;
+  padding: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.layout-text p {
+  color: #979696;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+.details-icon {
+  font-weight: 600;
+  background-color: #00000022;
+}
+
+.pen {
+  color: var(--secondary);
+  background: transparent;
+}
+.layout-Image-Cont {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.layout-Image {
+  width: 29rem;
+  height: 8rem;
+  object-fit: cover;
+}
+
+/*  RIDDDLE PAGE */
+
+.riddleContainer p:nth-child(1) {
+  margin-bottom: 0.8rem;
+}
+.riddleContainer p {
+  text-align: center;
+  font-size: 2.1rem;
+}
+.o {
+  max-height: 0rem;
+}
+.riddle {
+  max-height: auto;
+  transition: max-height 0.9s ease, opacity 0.3s ease;
+}
+
+.riddle-day {
+  background-color: #ffff;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  padding: 2rem 0 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.riddle-day h4 {
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+.riddle {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.hide {
+  display: none;
+  transition: all 0.5s;
+}
+.top-Head-riddle {
+  display: flex;
+  justify-content: space-between;
+}
+.top-Head-riddle h3 {
+  color: rgb(59, 56, 56);
+}
+
+.top-Head-riddle-icon {
+  margin-right: 2.7rem;
+  font-size: 2.5rem;
+  color: var(--secondary);
+}
+
+.riddle-text {
+  color: #1a1818;
+  font-size: 2rem;
+  margin-top: 1rem;
+  text-align: start !important;
+}
+.riddle-answers {
+  color: #0a0000;
+  text-align: start !important;
+}
+
+.riddle-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.riddle-btn {
+  padding: 0.9rem;
+  color: #fff;
+  background-color: var(--secondary);
+  border: none;
+}
+.arrRight {
+  margin-right: 2.7rem;
+  font-size: 1.4rem;
+  color: rgb(54, 51, 2);
+}
+
+/* AddNoteCss */
+/*    querry Selector */
+@media (max-width: 773px) {
+}
+
+@media (max-width: 621px) {
+  html {
+    font-size: 50%;
+  }
+  .layoutComponentContainer {
+    width: 90%;
+  }
+}
+
+@media (max-width: 567px) {
+  .layoutComponentContainer {
+    width: 90%;
+  }
+}
+
+@media (max-width: 513px) {
+  .profileContainer {
+    gap: 1.6rem;
+    transform: translateX(-1.5rem);
+  }
+
+  .Welcome-text span {
+    font-size: 1.9rem;
+  }
+  .layoutComponentContainer {
+    width: 90%;
+    padding-bottom: 0.5rem;
+  }
+  .layoutComponent {
+    height: 15.5rem;
+  }
+  .Top-Section {
+    gap: 3.8rem;
+  }
+  .explore {
+    margin-bottom: 1.5rem;
+  }
+
+  .Welcome-text {
+    font-size: 2.5rem;
+  }
+  .riddle {
+    padding-right: 1.5rem;
+  }
+
+  .riddle p {
+    font-size: 2rem;
+    line-height: 2.3rem;
+  }
+
+  .detail p {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+
+  .details-icon {
+    font-size: 2.5rem;
+  }
+  .TopBar {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 415px) {
+  html {
+    font-size: 45%;
+  }
+
+  .layoutComponentContainer {
+    width: 90%;
+  }
+  .layoutComponent {
+    padding-right: 1.2rem;
+  }
+}

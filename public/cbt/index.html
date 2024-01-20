@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass Question Section</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div>
+    <div class="container">
+      
+
+      <div>
+        <h2 style="text-align: center; color: #66e201;">CBT SECTION</h2>
+        <!-- <button type="button">Time Set</button> -->
+        <hr>
+      </div>
+
+      <div class="course-drop-down">
+        <h3 style="color: #66e201;">SELECT COURSE</h3>
+        <!-- <select name="" id="courseSelect" >
+
+          <option value="MATH102" id="courseSelect">MATH 102</option>
+          <option value="PHY102" id="courseSelect">PHY 102</option>
+          <option value="CHEM102" id="courseSelect">CHEM 102</option>
+          <option value="BIO102" id="courseSelect">BIO 102</option>
+          <option value="">GST104 </option>
+          <option value="">GST 107</option>
+          <option value="">GST 110</option>
+          <option value="">GST 112</option>
+        </select> -->
+        
+
+        <div style="display: grid; place-items: center; width: 100%;">
+          <div style="width: 100%;">
+            <select name="" id="courseSelect" class="courseSelect">
+                <option value="course">Select Course</option>
+                <!-- <option value="MATH102" onclick="getOptionValue(this)">MATH 102</option>
+                <option value="PHY102" onclick="getOptionValue(this)">PHY 102</option>
+                <option value="CHEM102" onclick="getOptionValue(this)">CHEM 102</option>
+                <option value="BIO102" onclick="getOptionValue(this)">BIO 102</option> -->
+                <option value="GST104" onclick="getOptionValue(this)">GST 104</option>
+                <option value="GST107" onclick="getOptionValue(this)">GST 107</option>
+                <option value="GST110" onclick="getOptionValue(this)">GST 110</option>
+                <option value="" onclick="getOptionValue(this)">GST 112</option>
+          </select>
+    
+
+            <select name="" id="years">
+              <option value="">Select years</option>
+              <optgroup label="Years">
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2023">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="All Years">All Years</option>
+              </optgroup>
+            </select>
+          </div>
+
+          
+        </div>
+
+        </div>
+
+
+      
+    </div>
+  </div>
+
+
+<script>
+   function questionClearToggle() {
+  if (localStorage.getItem('questionScreenToggleCBT') == undefined) {
+      localStorage.setItem('questionScreenToggleCBT', false);
+  } else if (localStorage.getItem('questionScreenToggleCBT') === "true") {
+      window.location.reload();
+      localStorage.removeItem('questionScreenToggleCBT')
+  }
+}
+
+setInterval(questionClearToggle, 100);
+</script>      
+  
+
+    <script src="app.js"></script>
+</body>
+</html>

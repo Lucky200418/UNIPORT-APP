@@ -1,0 +1,230 @@
+/* **********NOTE UNAVIALABLE ********** */
+.noteUnavailableContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.noteUnavailableContainer img {
+  width: 90%;
+  height: 10%;
+  align-self: center;
+  justify-self: center;
+}
+.noteUnavailableContainer p {
+  text-align: center;
+  font-size: 3.4rem;
+  line-height: 5.5rem;
+  font-weight: 600;
+}
+
+.noteUnavailableContainer span {
+  color: var(--darkSecondary);
+}
+/* **********NOTE UNAVIALABLE ********** */
+
+/* *******PROMPT.JS*********** */
+.promptContainer {
+  width: 70%;
+  height: auto;
+  padding: 1.5rem;
+  border-radius: 7px;
+  box-shadow: 0 4px 8px 0 rgba(143, 139, 139, 0.2),
+    0 6px 20px 0 rgba(151, 148, 148, 0.19);
+  z-index: 10;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -16%);
+  z-index: 10;
+  background-color: #fff;
+}
+.promptImage {
+  /* background-image: url("../../public/Images/Intro-4.jpg"); */
+  background-color: var(--darkSecondary);
+  background-repeat: no-repeat;
+  height: 20rem;
+  width: 100%;
+}
+.promptContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+.promptContainer h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.promptContainer p {
+  font-size: 1.7rem;
+}
+.promptContainer button {
+  background-color: var(--secondary);
+  color: #fff;
+  border: none;
+  border-radius: 9px;
+  padding: 0.9rem;
+}
+.promptContainer p {
+  text-align: center;
+  line-height: 3rem;
+}
+.promptClose {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 4rem;
+  color: #222;
+  padding: 0.9rem;
+  font-size: 2.3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.updateBrowerPrompt {
+  position: absolute;
+  top: 70px;
+  width: 70%;
+  padding: 0rem !important;
+}
+.closeUpdatePrompt {
+  position: absolute;
+  top: 0;
+  left: -2rem;
+  background-color: #fff;
+  color: #222;
+  padding: 1.8rem;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(143, 139, 139, 0.2),
+    0 6px 20px 0 rgba(151, 148, 148, 0.19);
+}
+
+.updateBrowerPromptInfo {
+  padding: 0.9rem;
+  text-align: center;
+  font-size: 1.6rem;
+}
+.updateBrowerPromptInfo span {
+  font-weight: 600;
+}
+.updateBrowerPromptInfo p {
+  margin-top: 2rem;
+  margin-bottom: -2rem;
+  text-align: start;
+  font-size: 1.2rem !important;
+  line-height: 1.6rem !important;
+}
+/* *******PROMPT.JS Activate*********** */
+
+/* **** Activation SuccessFul */
+.activation-success img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  padding-top: 2rem;
+}
+.activation-success-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: 2.4rem;
+  transform: translateY(-60px);
+  background-color: #fff;
+}
+.activation-success-content h3 {
+  font-weight: 500;
+  font-size: 3.2rem;
+  color: var(--secondary);
+}
+.activation-success-content button {
+  padding: 0.9rem;
+  background-color: var(--secondary);
+  width: 50%;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.activation-success-content p {
+  font-size: 1.8rem;
+}
+/* **** Activation SuccessFul */
+
+/************************ Install******************** */
+.iphone-display {
+  height: 100vh;
+  width: 100%;
+}
+.iphoneInstall {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50% auto;
+  padding: 2.2rem;
+  color: #fff;
+  background-color: var(--secondary);
+  border: none;
+  font-size: 2.4rem;
+  width: 70%;
+}
+.InstallguideImagecontainer {
+  margin: 0 auto;
+  width: 90%;
+  background-image: url(../../public/Images/iphone.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.InstallguideImagecontainer ~ .iphone-display {
+  margin: 0;
+}
+.install-guide-iphone {
+  width: 80%;
+  background-color: var(--secondary);
+  color: #fff;
+}
+/* ******************** Install ********************* */
+
+/* ******************** User GuideLines ********************* */
+.installation-guideline-android {
+  font-size: 2rem;
+  padding: 2rem;
+}
+.guideline-heading {
+  font-size: 4rem;
+  margin-bottom: 2.3rem;
+}
+.guideline-caution {
+  margin-bottom: 2rem;
+  color: red;
+}
+.guideline-list-heading {
+  margin-bottom: 2rem;
+}
+.guideline-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.9rem;
+}
+.guideline-list-container li {
+  line-height: 3rem;
+}
+.guideline-list-btn {
+  border: none;
+  width: 12rem;
+  padding: 0.9rem;
+  background-color: var(--darkSecondary);
+  color: #fff;
+  margin-right: 0.2rem;
+}
+.image-list-guide {
+  width: 60%;
+  /* height: 4rem; */
+}
+
+/* ******************** User GuideLines ********************* */

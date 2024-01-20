@@ -1,0 +1,151 @@
+/* :root{
+        --clr: #b6aa05
+        --secondary: #66e201;
+
+    } */
+
+.NavigationBar {
+  position: absolute;
+  position: fixed;
+  bottom: 0;
+  left: 1px;
+  font-size: 1.9rem;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+  padding-top: 0.6rem;
+  height: 6rem;
+}
+
+.NavigationBar nav {
+  display: flex;
+  width: 75rem;
+  margin: 0 auto;
+}
+
+.Nav-Container {
+  width: 25%;
+  height: 25%;
+  z-index: 1;
+  color: inherit;
+  text-decoration: none;
+}
+
+.icon {
+  position: relative;
+  line-height: 75px;
+  font-size: 2rem;
+  text-align: center;
+  transition: 0.5s;
+  /* color: rgb(59, 56, 56); */
+}
+
+.navCount {
+  position: absolute;
+  top: -7px;
+  right: -11px;
+  height: 3rem;
+  font-size: 1.5rem;
+}
+.navCount span {
+  padding: 0.6rem;
+  border-radius: 20px;
+  color: #fff;
+  background-color: var(--secondary);
+}
+.nav-link {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 500;
+}
+.active {
+  background-color: var(--secondary);
+}
+
+.Nav-Container.active .nav-link {
+  transform: translateY(4.6px);
+  background-color: var(--secondary);
+}
+.Nav-Container.active .icon {
+  color: #fff;
+}
+.Nav-Container.active .text {
+  color: #fff;
+}
+
+.nav-link ~ .text {
+  position: absolute;
+  color: var(--clr);
+  font-weight: 0.75em;
+  letter-spacing: 0.05em;
+  opacity: 0;
+  transform: translateY(40px);
+  font-size: 1.5rem;
+}
+
+.Nav-Container.active .nav-link .text {
+  opacity: 1;
+  transform: translateY(-29px);
+  transition: all 0.5s ease-in-out;
+}
+
+/* .indicator{
+       position: absolute;
+       top: -47%;
+       left: 4%;
+       width: 16%;
+       height: 70px;
+       background-color: #29fd53;
+       border-radius: 50%;
+       border: 6px solid #dcf7bf;
+       transition: 0.5s;
+    }
+    .indicator::before{
+       content: "";
+       position: absolute;
+       top: 65%;
+       left: -17px;
+       width: 20px;
+       height: 20px;
+       background: transparent;
+       border-top-right-radius: 20px;
+       box-shadow: 1px -10px 0 0 #dcf7bf;
+    }
+    
+    .indicator::after{
+   content: "";
+       position: absolute;
+       top: 65%;
+       right: -17px;
+       width: 20px;
+       height: 20px;
+       background: transparent;
+       border-top-left-radius: 20px;
+       box-shadow: -1px -10px 0 0 #dcf7bf;
+    }
+    
+    .NavigationBar ul li:nth-child(1).active ~ .indicator{
+      transform: translateX(calc(125px * 0));
+      width: 2px;
+    }
+    
+    .NavigationBar ul li:nth-child(2) .active ~ .indicator{
+       transform: translateX(calc(125px  * 1));
+       width: 2px;
+    }
+    
+    .NavigationBar ul li:nth-child(3) .active ~ .indicator{
+       transform: translateX(calc(125 * 2));
+    }
+    
+    .NavigationBar ul li:nth-child(4) .active ~ .indicator{
+       transform: translateX(calc(125 * 3));
+    }
+     */

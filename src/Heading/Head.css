@@ -1,0 +1,18 @@
+.MainNavBar{
+   display: flex;
+   width: 100%;
+   justify-content: space-around;
+   font-size: 1.7rem;
+   padding: 1.9rem;
+   box-shadow:  0 4px 8px 0 rgba(185, 181, 181, 0.2), 0 6px 20px 0 rgba(182, 177, 177, 0.19);
+   background-color: #fff;
+}
+
+.MainNavBar h3{
+   color: var(--secondary);
+}
+
+.MainNavBar h3 > span{
+   color: #2e2d2d;
+}
+

@@ -1,0 +1,234 @@
+.Manual-Solutions-Container {
+  background-color: #fff;
+  height: auto;
+}
+.Manual-Solutions-heading {
+  background-color: var(--secondary);
+  padding: 3rem;
+  color: antiquewhite;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2.9rem;
+  /* position: absolute; */
+  width: 100%;
+  top: 0;
+  overflow-y: hidden;
+}
+.Manual-Solutions-heading-icon {
+  font-size: 4rem;
+}
+.Manual-Solutions-bottom {
+  position: absolute;
+  position: fixed;
+  bottom: 0;
+  left: 1px;
+  font-size: 1.9rem;
+  width: 100%;
+  height: 12rem;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+}
+
+.Manual-Solutions-icon {
+  padding: 1.5rem;
+  background-color: var(--secondary);
+  color: #fff;
+  border-radius: 50px;
+  width: 8rem;
+  margin-right: 4rem;
+  font-size: 2.5rem;
+}
+.Manual-Solutions-Input::placeholder {
+  color: #fff;
+  font-size: 2.6rem;
+  text-align: center;
+}
+
+.Manual-Solutions-Input {
+  padding: 2rem;
+  font-size: 2.6rem;
+  border-radius: 50px;
+  border: none;
+  width: 70%;
+  background-color: var(--secondary);
+  color: #fff;
+}
+.Manual-SolutionsLists {
+  padding: 1.3rem;
+  padding-bottom: 12rem;
+  /* margin-top: 10rem; */
+}
+.ManualContainerList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+  gap: 3rem;
+  width: 100%;
+  padding: 1.2rem;
+  border: 0.2px solid #cccccc;
+  border-radius: 10px;
+  margin-bottom: 1.9rem;
+  box-shadow: 0 4px 8px 0 rgba(148, 146, 146, 0.2),
+    0 6px 20px 0 rgba(153, 151, 151, 0.19);
+}
+.ManualContainerList:nth-child(1) {
+  /* margin-top: 3rem; */
+}
+.ManualContainerList-icon {
+  font-size: 7rem;
+  color: var(--secondary);
+}
+.ManualContainerList-icon2 {
+  font-size: 5rem;
+  color: var(--darkSecondary);
+}
+.threeunit {
+  color: var(--darkSecondary) !important;
+}
+.ManualListInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.ManualListInfo h3 {
+  font-weight: 700;
+  font-size: 2.7rem;
+}
+.ManualContainerListLeft {
+  display: flex;
+  gap: 2rem;
+}
+/* ********Pdf Page******************** */
+.pdfwrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.PdfContainer {
+  width: 100%;
+  margin-top: 10%;
+  height: auto;
+  overflow: scroll;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #999;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 120%;
+  margin: 0 auto;
+}
+.pdfHeader {
+  padding: 2rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.pdfHeaderLeft {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.pdfHeaderRight {
+  display: flex;
+  gap: 3rem;
+  font-size: 3rem;
+}
+.pdfHeaderRightIcon {
+  color: var(--secondary);
+}
+.pdfHeaderIcon {
+  font-size: 4rem;
+}
+.pdfBtnsContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 0.9rem;
+  background-color: #fff;
+  padding: 1rem;
+
+  position: absolute;
+  position: fixed;
+  bottom: 0;
+  left: 1px;
+  width: 100%;
+  overflow-y: hidden;
+}
+.pdfTextNumPages span {
+  font-size: 3rem;
+}
+.pdfBtns {
+  display: flex;
+  gap: 2rem;
+  border: 10px;
+}
+.pdfBtns button {
+  font-size: 3rem;
+  color: #fff;
+  border: none;
+  padding: 0.9rem;
+  background-color: var(--secondary);
+}
+.ManualIconLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--darkSecondary);
+}
+/* ********Pdf Page******************** */
+/* ************* Pdfs querries ******************* */
+@media (max-width: 727px) {
+  .Manual-Solutions-heading {
+    gap: 1.6rem;
+    font-size: 2rem;
+  }
+  .ManualContainerList {
+    gap: 2rem;
+    padding: 0.8rem;
+    font-size: 1.5rem;
+  }
+  .ManualContainerList-icon {
+    font-size: 6rem;
+  }
+  .ManualListInfo div > h3 {
+    font-size: 2.3rem;
+  }
+  .ManualListInfo {
+    gap: 0.7rem;
+  }
+  .ManualContainerList-icon2 {
+    font-size: 3rem;
+  }
+  .Manual-Solutions-bottom {
+    height: 8rem;
+  }
+  .Manual-Solutions-Input {
+    padding: 1.2rem;
+  }
+
+  .Manual-Solutions-Input::placeholder {
+    font-size: 2.2rem;
+  }
+  .Manual-Solutions-icon {
+    font-size: 1.6rem;
+    padding: 1.1rem;
+  }
+}
+
+/* ************* Pdfs querries ******************* */

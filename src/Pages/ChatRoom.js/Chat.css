@@ -1,0 +1,26 @@
+.chatwrapper {
+  background-color: #fff !important;
+}
+.chatComponentContainer {
+  background-image: url("../../../public/Images/backgroundImage-3.png") !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100vh;
+}
+
+.chatComponentContainer p {
+  font-size: 2.9rem;
+  text-align: center;
+  margin-top: 150%;
+  line-height: 4.2rem;
+  font-weight: 600;
+}
+
+.chatComponentContainer b {
+  color: var(--secondary);
+}
+.IframeContainer {
+  height: 100vh;
+}

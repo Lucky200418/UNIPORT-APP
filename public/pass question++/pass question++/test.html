@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Selection</title>
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .course {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px;
+      cursor: pointer;
+    }
+    .selected {
+      background-color: lightblue;
+    }
+  </style>
+</head>
+<body>
+  <div id="courseButtonContainer">
+    <button id="selectCourseButton">Select Course</button>
+  </div>
+  <div class="container" id="courseContainer"></div>
+  <div class="container" id="topicContainer"></div>
+  <div class="container" id="yearContainer"></div>
+
+  <script>
+    const courseData = [
+      {
+        name: "MATH102",
+        topics: ["Permutation", "Calculus", "Limits", "Functions"],
+        years: [2020, 2021, 2022],
+      },
+      {
+        name: "PHY102",
+        topics: ["Electric fields", "Gauss Law", "Capacitor"],
+        years: [2019, 2020, 2021],
+      },
+      // Add more course objects
+    ];
+
+    const selectCourseButton = document.getElementById("selectCourseButton");
+    const courseContainer = document.getElementById("courseContainer");
+    const topicContainer = document.getElementById("topicContainer");
+    const yearContainer = document.getElementById("yearContainer");
+
+    selectCourseButton.addEventListener("click", () => {
+      courseContainer.innerHTML = "";
+      topicContainer.innerHTML = "";
+      yearContainer.innerHTML = "";
+
+      courseData.forEach(course => {
+        const courseDiv = document.createElement("div");
+        courseDiv.classList.add("course");
+        courseDiv.textContent = course.name;
+
+        if (localStorage.getItem("selectedCourse") === course.name) {
+          courseDiv.classList.add("selected");
+        }
+
+        courseDiv.addEventListener("click", () => {
+          localStorage.setItem("selectedCourse", course.name);
+          courseContainer.querySelectorAll(".course").forEach(div => div.classList.remove("selected"));
+          courseDiv.classList.add("selected");
+
+          // Show topics for the selected course
+          showTopics(course);
+        });
+
+        courseContainer.appendChild(courseDiv);
+      });
+    });
+
+    function showTopics(course) {
+      topicContainer.innerHTML = "";
+      yearContainer.innerHTML = "";
+
+      course.topics.forEach(topic => {
+        const topicDiv = document.createElement("div");
+        topicDiv.textContent = topic;
+        topicDiv.addEventListener("click", () => {
+          localStorage.setItem("selectedTopic", topic);
+
+          // Show years for the selected topic
+          showYears(course, topic);
+        });
+
+        topicContainer.appendChild(topicDiv);
+      });
+    }
+
+    function showYears(course, topic) {
+      yearContainer.innerHTML = "";
+
+      course.years.forEach(year => {
+        const yearDiv = document.createElement("div");
+        yearDiv.textContent = year;
+        yearDiv.addEventListener("click", () => {
+          localStorage.setItem("selectedYear", year);
+          yearContainer.querySelectorAll(".selected").forEach(div => div.classList.remove("selected"));
+          yearDiv.classList.add("selected");
+        });
+
+        yearContainer.appendChild(yearDiv);
+      });
+    }
+
+    // Clear local storage on page reload
+    window.addEventListener("beforeunload", () => {
+      localStorage.clear();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!-- Created By CodingNepal - www.codingnepalweb.com  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>school</title>
+    <link rel="stylesheet" href="./cal-style.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAweome CDN Link for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</head>
+<body>
+    <!-- start Quiz button -->
+    <!-- <div class="container"> -->
+    <div class="start_btn"><button>Pass Question Paper</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span style="color: #66e201;">Academy Solution.</span></div>
+        <div class="info-list">
+            <div class="info"><span style="color: #66e201;">1.</span> We have provided you with over<span> 1000+</span> questions and answers.</div>
+            <div class="info"><span style="color: #66e201;">2.</span> Our questions are carefully selected from pass questions based on your present course outline</div>
+            <div class="info"><span style="color: #66e201;">3.</span> Once you select your answer, it can't be undone.</div>
+            <div class="info"><span style="color: #66e201;">4.</span> You'll get points on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box normal-page" >
+        <header>
+            <div class="title" style="color: #66e201;" id="courseYear">GST104 : 2015</div>
+            <div id="openButton">
+                <img src="./image/Calculator-icon.png" width="30" height="30">
+            </div>
+            <div class="timer">
+                <div class="time_left_txt"></div>
+                <div class="timer_sec"></div>
+                
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+
+            <div class="center cover-layout" id="coverLayout">
+                <form name="forms" class="for">
+                    <!-- <img  src="https://icons.iconarchive.com/icons/hopstarter/sleek-xp-software/128/Windows-Close-Program-icon.png" width="128" height="128"> -->
+                    
+
+                    <input name="display" id="display" type="text">
+                    <img id="closeButton" style="transform: rotate(30deg);" src="./image/sign-add-icon.png" width="30" height="30">
+                    <div class="buttons">
+                        <input type="button" value="ln"   onclick="lan()">
+                        <input type="button" value="pi"   onclick="pi()">
+                        <input type="button" value="sin"   onclick="sine()">
+                        <input type="button" value="cos"   onclick="cos()">
+                        <input type="button" value="tan"   onclick="tan()"><br>
+                        <input type="button" value="&#8730;"   onclick="sqrt()">
+                        <input type="button" value="x!"   onclick="fact()">
+                        <input type="button" value="rad"   onclick="rad()">
+                        <input type="button" value="x&#178;"   onclick="square()">
+                        <input type="button" value="log"   onclick="logarithm()"><br>
+                        <input type="button" value="9" onclick="designate('9')">
+                        <input type="button" value="8" onclick="designate('8')">
+                        <input type="button" value="7" onclick="designate('7')">
+                        <input type="button" value="DEL" onclick="del()">
+                        <input type="button" value="AC" onclick="ac()"><br>
+                        <input type="button" value="6"   onclick="designate('6')">
+                        <input type="button" value="5"   onclick="designate('5')">
+                        <input type="button" value="4"   onclick="designate('4')">
+                        <input type="button" value="-"   onclick="designate('-')">
+                        <input type="button" value="+"   onclick="designate('+')"><br>
+                        <input type="button" value="3"   onclick="designate('3')">
+                        <input type="button" value="2"   onclick="designate('2')">
+                        <input type="button" value="1"   onclick="designate('1')">
+                        <input type="button" value="*"   onclick="designate('*')">
+                        <input type="button" value="/"   onclick="designate('/')"><br>
+                        <input type="button" value="0"   onclick="designate('0')">
+                        <input type="button" value="."   onclick="designate('.')">
+                        <input type="button" value="("   onclick="designate('(')">
+                        <input type="button" value=")"   onclick="designate(')')">
+                        <input type="button" value="%"   onclick="per()"><br>
+                        <input type="button" style="width: 45%;" value="00"   onclick="designate('00')">
+                        <input type="button" style="width: 45%;" value="="   onclick="equal()">
+        
+                        
+                        
+        
+                    </div>
+                </form>
+            </div>
+
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="back">Back</button>
+            <button class="showWrongAnswer">Answer</button>
+            <button class="next_btn">Next</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text" style="text-align: center;">You've completed this pass question section!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Restart Question</button>
+            <button class="quit">Quit</button>
+        </div>
+    </div>
+  <!-- </div>   -->
+  <script>
+    function questionClearToggle() {
+        localStorage.setItem('questionScreenToggle', true);
+    }
+    
+    window.onload = questionClearToggle;
+    
+      </script>
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="js/questions.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="js/script.js"></script>
+
+    <!-- inside code for calculator -->
+    <script src="./cal-app.js"></script>
+
+</body>
+</html>
